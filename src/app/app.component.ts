@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clase-angular2';
-  mostrarClase= true;
+  mostrarClase= false;
+
+  /*constructor() {
+    setInterval(() =>{
+      this.mostrarClase = !this.mostrarClase;
+    }, 5000);
+  }*/
+
 }

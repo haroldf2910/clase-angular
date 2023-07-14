@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output , EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,14 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+
+  @Output() seleccionarPagina = new EventEmitter();
+
   menu = [
-    {nombre: 'Inicio'},
-    {nombre: 'Tienda'},
-    {nombre: 'Nosotros'},
-    {nombre: 'Contáctanos'}
+    {nombre: 'Inicio', ruta: 'inicio'},
+    {nombre: 'Tienda', ruta: 'catalogo'},
+    {nombre: 'Nosotros', ruta: 'nosotros'},
+    {nombre: 'Contáctanos', ruta: 'contactenos'}
   ];
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  cambiarPagina(paramRuta:string) {
+    //alert('Deberia cambiar a la ' + paramRuta);
+    this.seleccionarPagina.emit(paramRuta);
+  }
 }

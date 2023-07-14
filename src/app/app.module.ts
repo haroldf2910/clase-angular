@@ -12,6 +12,10 @@ import { ClasesComponent } from './clases/clases.component';
 import { TiendaComponent } from './tienda/tienda.component';
 import { NavbarComponent } from './tienda/navbar/navbar.component';
 import { InicioComponent } from './tienda/inicio/inicio.component';
+import { CiclosvidaComponent } from './clases/ciclosvida/ciclosvida.component';
+import { CatalogoComponent } from './tienda/catalogo/catalogo.component';
+import { NosotrosComponent } from './tienda/nosotros/nosotros.component';
+import { ContactenosComponent } from './tienda/contactenos/contactenos.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { InicioComponent } from './tienda/inicio/inicio.component';
     ClasesComponent,
     TiendaComponent,
     NavbarComponent,
-    InicioComponent
+    InicioComponent,
+    CiclosvidaComponent,
+    CatalogoComponent,
+    NosotrosComponent,
+    ContactenosComponent
   ],
   imports: [
     BrowserModule,
