@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <h1>Ejemplo ngIf</h1>
+            <button class="btn btn-primary" (click)="mostrarImagen = !mostrarImagen">click para cambiar</button>
+            <br>
+            <img *ngIf="mostrarImagen" src="https://eq2imhfmrcc.exactdn.com/wp-content/uploads/2012/01/perro-cachorro.jpg?strip=all&lossy=1&ssl=1" alt="perro">
+        </div>
+        <div class="col-md-9">
+            <h1>Ejemplo ngFor</h1>
+            <ul>
+                <li *ngFor="let letra of unArray">
+                    <strong>{{letra}}</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <h1>Ejemplo diretivas de atributo</h1>
+            <p>Es asi [ngClass]="{{'{'}}'nombreClase': expression, 'nombreclase2': expresion2{{'}'}}"</p>
+            <button [ngClass]="{'btn': aplicarBoot, 'btn-primary': aplicarBoot}">Hola</button>
+        </div>
+    </div>
+</div>

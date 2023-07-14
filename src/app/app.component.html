@@ -1,4 +1,10 @@
-<div class="container" style="height: 100vh; background-color: skyblue;"></div>
-<app-componentes>
-  
-</app-componentes>  
+<!--<div class="container" style="height: 100vh; background-color: skyblue;"></div>
+<app-componentes></app-componentes>
+<app-binding></app-binding>-->
+
+
+<app-calculadora *ngIf="mostrarClase"></app-calculadora>
+<app-tienda *ngIf="!mostrarClase"></app-tienda>
+
+<button class="btn btn-primary botonPagina" *ngIf="!mostrarClase" (click)="mostrarClase = !mostrarClase">i</button>
+<button class="btn btn-info botonPagina" *ngIf="mostrarClase" (click)="mostrarClase = !mostrarClase">x</button>
