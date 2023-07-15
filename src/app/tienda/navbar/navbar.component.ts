@@ -10,10 +10,10 @@ export class NavbarComponent implements OnInit {
   @Output() seleccionarPagina = new EventEmitter();
 
   menu = [
-    {nombre: 'Inicio', ruta: 'inicio'},
-    {nombre: 'Tienda', ruta: 'catalogo'},
-    {nombre: 'Nosotros', ruta: 'nosotros'},
-    {nombre: 'Contáctanos', ruta: 'contactenos'}
+    {nombre: 'Inicio', ruta: 'inicio', current: 'true'},
+    {nombre: 'Tienda', ruta: 'catalogo', current: 'false'},
+    {nombre: 'Nosotros', ruta: 'nosotros', current: 'false'},
+    {nombre: 'Contáctanos', ruta: 'contactenos', current: 'false'}
   ];
 
   constructor() {}
@@ -21,7 +21,14 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {}
 
   cambiarPagina(paramRuta:string) {
-    //alert('Deberia cambiar a la ' + paramRuta);
+    this.menu.forEach(item => {
+      if (item.ruta === paramRuta) {
+        item.current = 'true';
+      } else {
+        item.current = 'false';
+      }
+    });
+
     this.seleccionarPagina.emit(paramRuta);
   }
 }
