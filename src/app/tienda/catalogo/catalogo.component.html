@@ -1,6 +1,14 @@
-<ul>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let producto of productos">
+      {{ producto.title }}
+      <img [src]="producto.image" />
+    </div>
+  </div>
+  <ul>
     <li *ngFor="let producto of productos">
-        {{producto.title}}
-        <img [src]="producto.image">
+      {{ producto.title }}
+      <img [src]="producto.image" />
     </li>
-</ul>
+  </ul>
+</div>

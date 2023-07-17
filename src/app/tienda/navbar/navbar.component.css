@@ -1,5 +1,21 @@
 .navcontainer {
     background: #f8f9fa;
-    margin-bottom: 15px;
     border-bottom: 1px solid #ccc;
+}
+
+#navbarNav a {
+    border-top: 2px solid transparent;
+    font-size: 12px;
+}
+
+#navbarNav a.active {
+    border-top: 2px solid #51a2a6;
+}
+
+.nobold {
+    font-weight: normal;
+}
+
+.margin0 {
+    margin-bottom: 0px;
 }
