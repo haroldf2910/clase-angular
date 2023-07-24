@@ -1,7 +1,10 @@
-<app-navbar (seleccionarPagina)="escogerPagina($event)"></app-navbar>
-<div [ngSwitch]="ruta">
+<!-- <app-navbar (seleccionarPagina)="escogerPagina($event)"></app-navbar>
+ <div [ngSwitch]="ruta">
   <app-inicio *ngSwitchCase="'inicio'"></app-inicio>
   <app-catalogo *ngSwitchCase="'catalogo'"></app-catalogo>
   <app-nosotros *ngSwitchCase="'nosotros'"></app-nosotros>
   <app-contactenos *ngSwitchCase="'contactenos'"></app-contactenos>
-</div>
+</div> -->
+
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>

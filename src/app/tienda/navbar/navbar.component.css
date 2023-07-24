@@ -10,6 +10,12 @@
 
 #navbarNav a.active {
     border-top: 2px solid #51a2a6;
+    cursor: default;
+    font-weight: bold;
+}
+
+#navbarNav a:not(.active) {
+    cursor: pointer;
 }
 
 .nobold {

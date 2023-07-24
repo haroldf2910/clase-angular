@@ -1,14 +1,12 @@
+<h6 class="text-center titulo">Productos</h6>
 <div class="container">
   <div class="row">
-    <div class="col-sm-3" *ngFor="let producto of productos">
-      {{ producto.title }}
-      <img [src]="producto.image" />
+    <div class="col-sm-4" *ngFor="let producto of productos">
+      <div class="tarjeta">
+        <img [src]="producto.image" class="producto" />
+        <br />
+        <span>{{ producto.title }}</span>
+      </div>
     </div>
   </div>
-  <ul>
-    <li *ngFor="let producto of productos">
-      {{ producto.title }}
-      <img [src]="producto.image" />
-    </li>
-  </ul>
 </div>

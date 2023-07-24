@@ -8,7 +8,8 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li *ngFor="let item of menu" class="nav-item">
-          <a (click)="cambiarPagina(item.ruta)" [ngClass]="{'active': item.current === 'true'}" class="nav-link">{{item.nombre | uppercase}}</a>
+          <!-- <a (click)="cambiarPagina(item.ruta)" [ngClass]="{'active': item.current === 'true'}" class="nav-link">{{item.nombre | uppercase}}</a> -->
+          <a [routerLink]="item.ruta" routerLinkActive="active" class="nav-link">{{item.nombre | uppercase}}</a>
         </li>
       </ul>
     </div>

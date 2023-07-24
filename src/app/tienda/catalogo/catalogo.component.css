@@ -1,0 +1,33 @@
+.titulo {
+    padding-top: 9px;
+    background-color: #51a2a6;
+    color: white;
+    height: 40px;
+}
+
+.tarjeta {
+    height: 270px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+.tarjeta img {
+    margin-bottom: 10px;
+}
+
+.tarjeta:hover {
+    color: #51a2a6;
+}
+
+.producto {
+    width: auto;
+    max-width: 100%;
+    max-height: 200px;
+}

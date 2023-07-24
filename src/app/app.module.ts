@@ -16,6 +16,8 @@ import { CiclosvidaComponent } from './clases/ciclosvida/ciclosvida.component';
 import { CatalogoComponent } from './tienda/catalogo/catalogo.component';
 import { NosotrosComponent } from './tienda/nosotros/nosotros.component';
 import { ContactenosComponent } from './tienda/contactenos/contactenos.component';
+import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
+import { ModelsComponent } from './clases/models/models.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ContactenosComponent } from './tienda/contactenos/contactenos.component
     CiclosvidaComponent,
     CatalogoComponent,
     NosotrosComponent,
-    ContactenosComponent
+    ContactenosComponent,
+    NoEncontradoComponent,
+    ModelsComponent
   ],
   imports: [
     BrowserModule,
